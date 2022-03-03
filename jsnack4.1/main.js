@@ -3,6 +3,7 @@
     Genera N array, ognuno formato da 10 numeri casuali tra 4 e 4532.
     Ogni volta che ne crei uno, stampalo a schermo.
  */
+
 // let n;
 // n=parseInt(prompt("inserisci un numero"));
 // let c=0;
