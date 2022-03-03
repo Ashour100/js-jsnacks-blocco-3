@@ -8,6 +8,8 @@
     se sono dispari li stampo nell'div "verde".
  *
  */
+
+
 function isPari(num){
     if(num%2==0)
         return true;
@@ -18,9 +20,21 @@ v=parseInt(prompt("Dim arr"));
 arr=[v];
 let numero;
 for(let i=0;i<v;i++){
-    numero=parseInt(prompt("Dim arr"));
+    numero=parseInt(prompt("Inserisci un numero"));
     if(isPari(numero))
         document.getElementById("first").innerHTML+=numero;
     else
         document.getElementById("second").innerHTML+=numero;
 }
+
+
+
+let Dim= document.getElementById("Dim");
+
+
+if(isPari(v))
+    Dim.classList.add("text-danger");
+else
+    Dim.classList.add("text-success");
+
+Dim.innerHTML="Dim="+v;
